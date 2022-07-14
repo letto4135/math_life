@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import './ConnectFour.css';
 import Circle from './Circle';
@@ -38,7 +39,40 @@ export default class ConnectFour extends React.Component {
                 <Instructions/>
                 <Row>
                     {this.state.circles.map((circle, index) => {
-                        return <Circle key={index + " " + circle} number={circle} click={this.logMe} />
+                        switch (index) {
+                            case 0:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 7:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 8:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 15:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 16:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 23:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 24:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 31:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 32:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 39:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 40:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 47:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 48:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 55:
+                                return <Circle span={3} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            case 56:
+                                return <Circle col_size={2} key={index + " " + circle} number={circle} click={this.logMe.bind(this, circle)}/>;
+                            default:
+                                return <Circle key={index + " " + circle} number={circle} click={this.logMe} />
+                        }
                     })}
                 </Row>
             </div>

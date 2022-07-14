@@ -1,9 +1,11 @@
 import './App.css';
+import {Link} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Home is where you make it</h1>
+      <h1>Printable Math games for kids.</h1>
+      <h2><Link className="app-anchor" to="/connect_four">Connect Four</Link></h2>
     </div>
   );
 }

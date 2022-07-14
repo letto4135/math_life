@@ -9,6 +9,14 @@
     * {
         color: black;
     }
+
+    .circle {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 5px !important;
+        border: 2px solid !important;
+        font-weight: bold !important;
+    }
 }
 
 .navbar {

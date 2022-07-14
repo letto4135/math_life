@@ -18,9 +18,9 @@ export default class CustomNavBar extends React.Component {
                             <NavDropdown.Item href="/connect_four">
                                 Connect Four
                             </NavDropdown.Item>
-                            <NavDropdown.Item href="/bingo">
+                            {/* <NavDropdown.Item href="/bingo">
                                 Bingo
-                            </NavDropdown.Item>
+                            </NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                     <Nav className="mr-auto">
