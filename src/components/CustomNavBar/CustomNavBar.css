@@ -1,0 +1,21 @@
+@media print {
+    @page {
+        size:  auto;
+        margin: 0mm;
+    }
+
+    .noprint {display:none;}
+
+    * {
+        color: black;
+    }
+}
+
+.navbar {
+    background-color: #419df9;
+}
+
+.navbar-nav .show > .nav-link, .nav-link:focus, .nav-link:hover, .nav-link, .navbar-brand {
+    color: whitesmoke !important;
+    font-weight: bold;
+}
