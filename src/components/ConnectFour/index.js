@@ -35,7 +35,7 @@ export default class ConnectFour extends React.Component {
         return (
             <div>
                 <Instructions/>
-                <Row>
+                <Row className="reduce-margin-sm">
                     {this.state.circles.map((circle, index) => {
                         switch (index) {
                             case 0:

@@ -7,8 +7,8 @@ export default class Circle extends React.Component {
     render() {
         return (
             <Col
-                xs={{span: this.props.span - 1 || 1, offset: this.props.col_size || 0}}
-                md={{span: this.props.span || 1, offset: this.props.col_size || 0}} className="outter-circle"
+                xs={{span: this.props.span || 1, offset: this.props.col_size || 0}}
+                className="outter-circle"
             >
                 <div className="circle" onClick={() => this.props.click(this.props.number)}>
                     <div>{this.props.number}</div>
